@@ -1,0 +1,39 @@
+.homeContainer{
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        h1{
+            font-family: 'Nixie One', cursive;
+            // font-family: 'Satisfy', cursive;
+            font-size: 5em;
+            font-weight: bolder;
+        }
+    }
+    // PROJECTS
+    .projectContainer{
+        
+        .project{
+            position: relative;
+            img{
+                width:100vw;
+                height:100vh;
+                overflow: hidden;
+                object-fit: cover;
+                
+            }
+            .projectFooter{
+                position: relative;
+                .projectURL{
+                    @include projectUrls(absolute, 100, 30px, left, 20px, none, black, 2em);
+                }
+                .allProjects{
+                    @include projectUrls(absolute, 100, 30px, right, 20px, none, black, 2em);
+                }
+            }
+        }
+    }
+}

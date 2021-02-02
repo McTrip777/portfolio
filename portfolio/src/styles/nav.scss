@@ -5,13 +5,16 @@
     right:10px;
     top:10px;
     border: none;
-    background: white;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
     i{
         font-size: 1.7em;
     }
    }
     //POPUP
     .popupContainer{
+        padding:1vh 1vw;
+        box-sizing: border-box;
         height: 100vh;
         width: 100vw;
         position: absolute;
@@ -21,18 +24,68 @@
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        i{
+            position: fixed;
+            top: 10px;
+            right:10px;
+            font-size: 1.7em;
+            cursor: pointer;
+            transition: all 2s ease-in;
+            &:hover{
+                font-size: 2em;
+                transform: rotate(180deg);
+            }
+        }
         a{
             text-decoration: none;
             color:black;
             font-size: 2em;
-            width:50vw;
-            height: 50vh;
-            line-height: 50vh;
+            width:49vw;
+            height: 49vh;
+            line-height: 49vh;
             box-sizing: border-box;
-            border: 1px solid black;
             h1{
                 vertical-align: middle;
+                &:hover{
+                    animation: wobble 2s;
+                }
             }
         }
+        .one{
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .two{
+            border-bottom: 1px solid black;
+        }
+        .three{
+            border-right: 1px solid black;
+        }
+        .centerBlock{
+            position: fixed;
+            height:4vh;
+            width:4vw;
+            top: 48vh;
+            z-index: 1000;
+            background-color: white;
+        }
+    }
+}
+
+@keyframes wobble {
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+    transform: rotate(-20deg);
+    }
+    60% {
+        transform: rotate(20deg);
+    }
+    80% {
+    transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
 }

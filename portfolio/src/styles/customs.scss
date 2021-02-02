@@ -1,0 +1,9 @@
+@mixin projectUrls ($position, $zIndex, $bottomPosition, $side, $sideDistance,  $textDecoration, $color, $fontSize){
+    position: $position;
+    z-index: $zIndex;
+    bottom: $bottomPosition;
+    #{$side}:$sideDistance;
+    text-decoration: $textDecoration;
+    color:$color;
+    font-size: $fontSize;
+}
