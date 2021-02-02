@@ -22,7 +22,10 @@ function Home() {
                         <img src={proj.img} alt="" />
                         <div className="projectFooter">
                             <a className="projectURL" href={proj.url}>View Site</a>
-                            <Link to="/projects" className="allProjects">View Projects</Link>
+                            <div className="allProjectsContainer">
+                                <Link to="/projects" className="allProjects">View Projects</Link>
+                                <div className="line" />
+                            </div>
                         </div>
                     </div>
                 ))}

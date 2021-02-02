@@ -30,10 +30,60 @@
                 .projectURL{
                     @include projectUrls(absolute, 100, 30px, left, 20px, none, black, 2em);
                 }
-                .allProjects{
+                .allProjectsContainer{
+                    width:6em;
                     @include projectUrls(absolute, 100, 30px, right, 20px, none, black, 2em);
+                    .allProjects{
+                        text-decoration: none;
+                        color:black;
+                    }
+                    .line{
+                        background-color: black;
+                        animation: animate 5s linear infinite; 
+                        animation-direction: alternate-reverse;
+                        position: absolute;
+                        right: 0;
+                        margin:.2em;
+                    }
                 }
             }
         }
     }
 }
+@keyframes animate { 
+    0% { 
+        width:0;
+        height:1px;
+        background-color: transparent;
+    }
+    1% { 
+        width:0;
+        height:1px;
+        background-color: black;
+    }  
+    20% { 
+        width:1%;
+        height:1px;
+        background-color: black;
+    } 
+    50% { 
+        width:100%;
+        height:1px;
+        background-color: black;
+    } 
+    80% { 
+        width:1%;
+        height:1px;
+        background-color: black;
+    }
+    99% { 
+        width:0;
+        height:1px;
+        background-color: black;
+    }  
+    100% { 
+        width:0;
+        height:1px;
+        background-color: transparent;
+    } 
+} 

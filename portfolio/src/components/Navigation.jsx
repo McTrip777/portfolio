@@ -11,7 +11,7 @@ function Navigation() {
         return <div onClick={() => setPopup(false)} className="popupContainer">
             <i className="fas fa-times" />
             <Link className="one" to="/"><h1>HOME</h1></Link>
-            <Link className="two" to="/projects"><h1>PORJECTS</h1></Link>
+            <Link className="two" to="/projects"><h1>PROJECTS</h1></Link>
             <Link className="three" to="/about"><h1>ABOUT</h1></Link>
             <Link className="four" to="/contact"><h1>CONTACT</h1></Link>
             <div className="centerBlock" />
