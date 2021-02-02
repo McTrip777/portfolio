@@ -1,6 +1,13 @@
 .homeContainer{
-
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    .section{
+        scroll-snap-align: start;
+    }
     header{
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,37 +21,34 @@
         }
     }
     // PROJECTS
-    .projectContainer{
-        
-        .project{
+    .project{
+        position: relative;
+        img{
+            width:100vw;
+            height:100vh;
+            overflow: hidden;
+            object-fit: cover;
+            
+        }
+        .projectFooter{
             position: relative;
-            img{
-                width:100vw;
-                height:100vh;
-                overflow: hidden;
-                object-fit: cover;
-                
+            .projectURL{
+                @include projectUrls(absolute, 100, 30px, left, 20px, none, black, 2em);
             }
-            .projectFooter{
-                position: relative;
-                .projectURL{
-                    @include projectUrls(absolute, 100, 30px, left, 20px, none, black, 2em);
+            .allProjectsContainer{
+                width:6em;
+                @include projectUrls(absolute, 100, 30px, right, 20px, none, black, 2em);
+                .allProjects{
+                    text-decoration: none;
+                    color:black;
                 }
-                .allProjectsContainer{
-                    width:6em;
-                    @include projectUrls(absolute, 100, 30px, right, 20px, none, black, 2em);
-                    .allProjects{
-                        text-decoration: none;
-                        color:black;
-                    }
-                    .line{
-                        background-color: black;
-                        animation: animate 5s linear infinite; 
-                        animation-direction: alternate-reverse;
-                        position: absolute;
-                        right: 0;
-                        margin:.2em;
-                    }
+                .line{
+                    background-color: black;
+                    animation: animate 5s linear infinite; 
+                    animation-direction: alternate-reverse;
+                    position: absolute;
+                    right: 0;
+                    margin:.2em;
                 }
             }
         }

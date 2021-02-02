@@ -10,27 +10,23 @@ function Home() {
         { img: Pizza, url: "https://jacobspizzasite.netlify.app/" }
     ])
 
-
     return (
         <div className="homeContainer">
-            <header>
+            <header className="section">
                 <h1>Jacob McFaul</h1>
             </header>
-            <div className="projectContainer">
-                {state.map((proj) => (
-                    <div className="project">
-                        <img src={proj.img} alt="" />
-                        <div className="projectFooter">
-                            <a className="projectURL" href={proj.url}>View Site</a>
-                            <div className="allProjectsContainer">
-                                <Link to="/projects" className="allProjects">View Projects</Link>
-                                <div className="line" />
-                            </div>
+            {state.map((proj) => (
+                <div className="project section">
+                    <img src={proj.img} alt="" />
+                    <div className="projectFooter">
+                        <a className="projectURL" href={proj.url}>View Site</a>
+                        <div className="allProjectsContainer">
+                            <Link to="/projects" className="allProjects">View Projects</Link>
+                            <div className="line" />
                         </div>
                     </div>
-                ))}
-            </div>
-
+                </div>
+            ))}
         </div>
     )
 }
