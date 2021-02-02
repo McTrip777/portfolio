@@ -10,13 +10,21 @@ function Home() {
         { img: Pizza, url: "https://jacobspizzasite.netlify.app/" }
     ])
 
+    const PlaneTrail = () => {
+        let pieces = []
+        for (let i = 0; i < 5; i++) {
+            pieces.push(<div className="trail" style={{ animationDelay: `${.4 * i + .3}s` }} />)
+        }
+        return pieces
+    }
+
     return (
         <div className="homeContainer">
-            <header className="section">
+            <section className="section header">
                 <h1>Jacob McFaul</h1>
-            </header>
+            </section>
             {state.map((proj) => (
-                <div className="project section">
+                <section className="project section">
                     <img src={proj.img} alt="" />
                     <div className="projectFooter">
                         <a className="projectURL" href={proj.url}>View Site</a>
@@ -25,8 +33,15 @@ function Home() {
                             <div className="line" />
                         </div>
                     </div>
-                </div>
+                </section>
             ))}
+            <section className="section homeAbout">
+                <h3>Hey! I am Jacob, a young, driven and hardworking individual, seeking to make a career as a Front-End Developer</h3>
+                <div className="aboutLink">
+                    <Link to="/about">About </Link><i class="fas fa-location-arrow"></i>
+                    <PlaneTrail />
+                </div>
+            </section>
         </div>
     )
 }
