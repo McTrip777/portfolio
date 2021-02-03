@@ -42,6 +42,14 @@ function Home() {
                     <PlaneTrail />
                 </div>
             </section>
+            <section className="section homeContact">
+                <h3>Need a website?</h3>
+                <Link to="/contact">Get in Contact</Link>
+                <div className="info">
+                    <a href="tel:1-805-390-6653">(805) 390-6653</a>
+                    <a href="mailto:jacob.m.mcfaul@gmail.com">Jacob.M.McFaul@gmail.com</a>
+                </div>
+            </section>
         </div>
     )
 }

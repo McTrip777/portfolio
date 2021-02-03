@@ -28,6 +28,7 @@
         text-align: center;
         z-index: 1000;
         i{
+            color: rgb(14, 136, 177);
             position: fixed;
             top: 10px;
             right:10px;
@@ -55,14 +56,14 @@
             }
         }
         .one{
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
+            border-right: 1px solid rgb(14, 136, 177);
+            border-bottom: 1px solid rgb(14, 136, 177);
         }
         .two{
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid rgb(14, 136, 177);
         }
         .three{
-            border-right: 1px solid black;
+            border-right: 1px solid rgb(14, 136, 177);
         }
         .centerBlock{
             position: fixed;

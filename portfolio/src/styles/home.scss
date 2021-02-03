@@ -1,5 +1,5 @@
 .homeContainer{
-    overflow: scroll;
+    overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
     height: 100vh;
@@ -92,17 +92,46 @@
                 height:.2em;
                 background-color: white;
                 position: absolute;
-                z-index: 100;
                 left:52vw;
                 bottom: 10px;
-                :nth-child(1){
-                  display: none;  
-                }
             }
-            
-            
         }
     }
+    .homeContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+        width:100%;
+        h3{
+            font-size: 2em;
+            padding-bottom: .5em;
+        }
+        a{
+            font-size: 2em;
+            margin-bottom: .5em;
+            text-decoration: none;
+            color:black;
+            &:hover{
+                color: rgb(14, 136, 177);
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            a{
+                padding:.5em;
+                font-size: 1.2em;
+                text-decoration: none;
+                color:black;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(14, 136, 177);
+                }
+            }
+        }
+    }
+
 }
 @keyframes animate { 
     0% { 
