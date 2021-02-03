@@ -22,6 +22,7 @@ function Home() {
         <div className="homeContainer">
             <section className="section header">
                 <h1>Jacob McFaul</h1>
+                <p>Front-End Developer</p>
             </section>
             {state.map((proj) => (
                 <section className="project section">
@@ -43,7 +44,7 @@ function Home() {
                 </div>
             </section>
             <section className="section homeContact">
-                <h3>Need a website?</h3>
+                <h3>Need a Website?</h3>
                 <Link to="/contact">Get in Contact</Link>
                 <div className="info">
                     <a href="tel:1-805-390-6653">(805) 390-6653</a>
