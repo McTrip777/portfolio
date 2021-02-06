@@ -1,14 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import Floor from '../img/floor-installation.jpg'
-import Pizza from '../img/pizza.jpg'
+import { ProjectData } from './ProjectData'
 
 function Home() {
-
-    const [state, setstate] = useState([
-        { img: Floor, url: "https://floorsplus.netlify.app/" },
-        { img: Pizza, url: "https://jacobspizzasite.netlify.app/" }
-    ])
 
     const PlaneTrail = () => {
         let pieces = []
@@ -24,7 +18,7 @@ function Home() {
                 <h1>Jacob McFaul</h1>
                 <p>Front-End Developer</p>
             </section>
-            {state.map((proj) => (
+            {ProjectData.map((proj) => (
                 <section className="project section">
                     <img src={proj.img} alt="" />
                     <div className="projectFooter">

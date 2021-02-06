@@ -1,8 +1,52 @@
 .projectsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
     h1{
-
+        color: white;
+        border-radius: 10px;
+        font-size: 3em;
+        margin:1em;
+        padding: .2em 0;
+        background-color: grey;
     }
     .allProjects{
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:0 3em;
+        box-sizing: border-box;
+        .project{
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            
+            .imgLink{
+                
+                img{
+                    width: 40vw;
+                    height: 30vw;
+                    border-radius: 10px;
+                }
+            }
+            .projectLinks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .nameLink{
+                    text-decoration: none;
+                    color: inherit;
+                    margin: 1em 0;
+                    h3{
+                        text-align: left;
+                        font-size: 1.2em;
+                    }
+                    i{
+                        font-size: 2em;
+                    }
+                }
+
+            }
+        }
     }
 }

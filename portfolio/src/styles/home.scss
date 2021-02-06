@@ -36,6 +36,7 @@
         }
         .projectFooter{
             position: relative;
+            
             .projectURL{
                 @include projectUrls(absolute, 100, 30px, left, 20px, none, black, 2em);
             }
