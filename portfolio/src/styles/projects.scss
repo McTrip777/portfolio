@@ -55,6 +55,8 @@
         h1{
         }
         .allProjects{
+            display: flex;
+            justify-content: center;
             .project{
                 .imgLink{
                     
