@@ -50,3 +50,29 @@
         }
     }
 }
+@media(max-width:500px){
+    .projectsContainer{
+        h1{
+        }
+        .allProjects{
+            .project{
+                .imgLink{
+                    
+                    img{
+                        width: 80vw;
+                        object-fit: cover;
+                    }
+                }
+                .projectLinks{
+                    .nameLink{
+                        h3{
+                        }
+                        i{
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
