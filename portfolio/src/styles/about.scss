@@ -26,9 +26,11 @@
             width: 100vw;
             img{
                 width: 70vw;
+                height:100vh;
                 position: absolute;
                 opacity: .5;
                 z-index: -100;
+                overflow: hidden;
             }
             h1{
                 font-size: 2em;
