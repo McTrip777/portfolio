@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ProjectData } from './ProjectData'
+import Logo from '../img/logo.png'
 
 function Home() {
 
@@ -15,6 +16,7 @@ function Home() {
     return (
         <div className="homeContainer">
             <section className="section header">
+                <img src={Logo} alt="" />
                 <h1>Jacob McFaul</h1>
                 <p>Front-End Developer</p>
             </section>
