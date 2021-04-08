@@ -20,6 +20,13 @@ function Home() {
                 <h1>Jacob McFaul</h1>
                 <p>Front-End Developer</p>
             </section>
+            <section className="section homeAbout">
+                <h3>Hey! I am Jacob, a young, driven and hardworking individual, seeking to make a career as a Front-End Developer</h3>
+                <div className="aboutLink">
+                    <Link to="/about">About </Link><i class="fas fa-location-arrow"></i>
+                    <PlaneTrail />
+                </div>
+            </section>
             {ProjectData.map((proj) => (
                 <section className="project section">
                     <img src={proj.img} alt="" />
@@ -32,13 +39,6 @@ function Home() {
                     </div>
                 </section>
             ))}
-            <section className="section homeAbout">
-                <h3>Hey! I am Jacob, a young, driven and hardworking individual, seeking to make a career as a Front-End Developer</h3>
-                <div className="aboutLink">
-                    <Link to="/about">About </Link><i class="fas fa-location-arrow"></i>
-                    <PlaneTrail />
-                </div>
-            </section>
             <section className="section homeContact">
                 <h3>Need a Website?</h3>
                 <Link to="/contact">Get in Contact</Link>
