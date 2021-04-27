@@ -1,7 +1,7 @@
 import Floor from '../img/floor-installation.jpg'
 import Pizza from '../img/pizza.jpg'
-import Twraps from '../img/twraps.png'
-import AlgoImg from '../img/algoImg.jpg'
+import Twraps from '../img/mustang.jpeg'
+import AlgoImg from '../img/array.jpg'
 
 export const ProjectData = [
     { name: "Floors Plus", img: Floor, url: "https://floorsplus.netlify.app/", github: "https://github.com/McTrip777/FloorsPlus" },
